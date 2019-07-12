@@ -4,8 +4,10 @@ ENDIF(NOT DEFINED ENABLE_ROS)
 
 if(ENABLE_ROS)
   project (jderobot)
+elseif(ENABLE_ROS2)
+  project (jderobot)
 else()
-  project (jderobot-only-ice)
+  project (jderobot)
 endif()
 
 # Change default install path
